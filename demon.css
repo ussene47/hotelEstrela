@@ -1,0 +1,327 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    box-sizing: border-box;
+}
+
+nav,li{
+    list-style: none;
+}
+a{
+    text-decoration: none; cursor: pointer; opacity: 0.9;
+
+}
+a:hover{
+    opacity: 1;
+}
+
+/*header*/
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+
+header img{
+    width: 200px;
+}
+
+header nav{
+    display:flex;
+}
+
+header li a{
+    color:black;
+    padding: 20px 20px;
+}
+
+header li:first-child{margin-left: 0;}
+header li:last-child{margin-right: 0;}
+@media(max-width:700px){
+        header{
+            flex-direction: column;
+        }
+        header img{
+            margin-bottom: 15px; 
+        }
+}
+
+/*herro*/
+.hero{
+    background-image: url(../Flexbox/img/piscina.jpg);
+    background-position:center;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+   
+}
+.hero h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.hero .btn{
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+@media(max-width:700px) {
+ .hero h1{
+     font-size: 2.5rem;
+ }
+ .hero h3{
+    font-size: 1.5rem;  
+}
+ header img{
+     margin-bottom: 15px;
+ }
+} 
+
+/*Conheca hotel*/
+.conheca-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.conheca-hotel h3{
+ font-size: 2rem;
+ margin-bottom: 15px;   
+ columns: #191c03;
+}
+
+.conheca-hotel p{
+    max-width: 800px;
+     margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+.conheca-hotel hr{
+    width: 100%;
+    height: 2px;
+    background-color: #191c03;
+}
+
+.conheca-hotel .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conheca-hotel .grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheca-hotel .grid li.small{
+    flex-basis:40%;
+
+
+}
+
+.conheca-hotel .grid li.large{
+    flex-basis:60%;
+}
+
+@media(max-width:700px){
+    .conheca-hotel .grid li.small,.conheca-hotel .grid li.large{
+        flex-basis: 100%;
+    }
+}
+
+/*caracteristicas*/
+.caracteristicas{
+    background-color: #191c03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.caracteristicas h3{
+ font-size: 2rem;
+ margin-bottom: 15px;   
+ columns: #fff;
+}
+
+.caracteristicas p{
+    max-width: 800px; margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas hr{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+
+.caracteristicas .grid{
+    width: 100%;
+    display: flex;
+
+}
+
+.caracteristicas .grid li{
+    padding: 0 30px;
+    text-align:center;
+
+
+}
+
+.caracteristicas .grid li i{
+  color:#c3c63b;
+  font-size: 50px;
+  margin-bottom: 30px;
+
+
+
+}
+
+
+.caracteristicas .grid li h4{
+  color:#c3c63b;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+
+}
+
+.caracteristicas .grid li p{
+    color:#c3c63b;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color:fff;
+  }
+
+  @media(max-width:850px){
+    .caracteristicas .grid{
+        flex-direction: column;
+    }
+}
+
+/*Newsletter*/
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+  
+}
+
+
+
+.newsletter h3{
+    font-size: 2rem;
+    margin-bottom: 35px;   
+    columns: #c3c63b;
+    text-align: center;
+   }
+   
+   .newsletter p{
+       max-width: 800px;
+        margin-bottom: 35px;
+       color: #c3c63b;
+       text-align: center;
+   }
+   
+   .newsletter hr{
+       width: 100%;
+       height: 2px;
+       margin-bottom: 70px;
+       background-color: #c3c63b;
+   }
+   
+   .newsletter form{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+       max-width: 800px;
+       width: 80%;
+   }
+
+   .newsletter input{
+       padding: 15px;
+       border: 2px solid #c3c63b;
+       border-radius: 4px;
+       margin-right: 15px;
+       flex: 1;
+   }
+
+   .newsletter button{
+       padding: 15px;
+       background-color: #c3c63b;
+       color: fff;
+       text-transform: uppercase;
+       border: none;
+       cursor: pointer;
+       border-radius: 4px;
+   }
+   @media(max-width:700px){
+    .newsletter input{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #191c03;
+padding: 50px 0 ;
+align-items: center;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+
+}
+
+footer ul li{
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+footer ul li a{
+    color: #c3c63b;
+    font-size: 2rem;
+
+}
+
+footer p{
+    color: #c3c63b;
+    text-align: center;
+}
