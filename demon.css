@@ -56,7 +56,7 @@ header li:last-child{margin-right: 0;}
 
 /*herro*/
 .hero{
-    background-image: url(../Flexbox/img/piscina.jpg);
+    background-image: url(img/piscina.jpg);
     background-position:center;
     background-size: cover;
     min-height: 100vh;
